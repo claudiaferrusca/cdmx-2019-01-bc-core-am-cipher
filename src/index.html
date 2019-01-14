@@ -6,35 +6,48 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
+  <section>  <div id="pantalla1"class= "hide">
       <center> <h1> Titulo de mi web </h1> </center>
       <br> </br>
       <!---especificar el codigo cesar--->
-    <center>  <p> Aquí podras cifrar y desifrar mensajes que mandes o te manden por WhatsApp, para hacer más privadas tus conversaciones. </p> </center>
+    <center>  <p> Aquí podrás cifrar y descifrar mensajes que mandes o te manden por WhatsApp, para hacer más privadas tus conversaciones. </p> </center>
 <!---INSTRUCCIONES ---->
 <h1> Instrucciones </h1>
 <ol>
-  <!--- primero para cifrar --->
-  <li> Ingre el numero de espacios que quieres recorrer las letras en tu mensaje a cifrar y darle enviar </li>
+  <!--- primero ara cifrar --->
+<strong>  <hi> Cifrar </hi> </strong> <br> </br>
+  <li> Ingre el número de espacios que quieres recorrer las letras en tu mensaje a cifrar y darle enviar </li>
   <li> En seguida ingresa el mensaje, sin ñ o ... </li>
-  <li> Dale enviar y en la pantalla de abajo te mostrara tu mensaje cifrado </li>
+  <li> Dale enviar, y en la pantalla de abajo te mostrara tu mensaje cifrado </li> <br> </br>
 
   <!--- para decifrar ---->
-  <hi> Para decifrar </hi>
-  <li> Ingresa el mensaje de texto que quieras decifrar y dale enviar </hi>
-    <li> Dale enviar y tu resultado se vera en la pantalla de abajo </hi>
-      <li> Al final podras compartir tu mensaje por WhatsApp o bien reiniciar </li>
+  <strong> <hi> Para descifrar </hi> </strong> <br>
+</br>
+  <li> Ingresa el mensaje de texto que quieras descifrar y dale enviar </hi>
+    <li> Dale enviar, y tu resultado se verá en la pantalla de abajo </hi>
+      <li> Al final podrás compartir tu mensaje por WhatsApp o reiniciar para poder ingresar más codigos </li>
     </ol>
+    <button id="empezar" onclick=juego()> ¡Empezar!
+</button>
 
+</div> </section>
+
+
+</div>
+<!---- pantalla2"---->
+
+<div id= "pantalla2" class="hide">
+  <center> <strong> <h1 id="titulo" class="hideTitle"> Mensaje a Cifrar </h1> </center> </stronge>
     <!--- Cuadro de recorrer espacios --->
-    <input type="chec-checkbox" id= contador>
-    <button id ="contador"
+
+    <form action="/action_page.php">
+    Escoge el número de espacios (Del 1 al 100):
+    <input type="number" id="recorredor" min="1" max="100">
+    <button id="enviar" onclick="numeros" ()> ¡Enviar!
+    </button>
+    </form>
 
 
-
-
-
-      <button id="boton" onclick=usuario()> Enviar </button>
     </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>

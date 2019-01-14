@@ -1,3 +1,10 @@
 html{
-  background: 
+  background: "https://i.pinimg.com/originals/5c/ef/36/5cef36801fdac1d0def7df5afdc220c6.jpg"
+}
+hide{
+  display:none;
+}
+
+.hideTitle{
+  display:none;
 }
