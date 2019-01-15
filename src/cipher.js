@@ -1,6 +1,6 @@
 window.cipher = {
   // ...
- encode: () => {
+ encode: = () => {
 
    alert ("aunque no lo crean estoy funcionado")
 
