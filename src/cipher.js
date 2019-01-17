@@ -13,8 +13,8 @@ window.cipher = {
 resultado= resultado+palabra;
     //}
     //let resultado= offset+string;
+  }
 return resultado;
-}
 },
 // encode: (offset,string) =>{
   // return offset+string
