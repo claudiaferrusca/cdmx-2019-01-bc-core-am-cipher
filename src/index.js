@@ -4,8 +4,8 @@ const box= document.getElementById('box');
 const corredor= document.getElementById('recorredor');
 //let string = '';
 //let offset = 0;
-const code= document.getElementById('code').value;
-const encode= document.getElementById('encode');
+//const code= document.getElementById('code').value;
+//const encode= document.getElementById('encode');
 
 //const compartir= document.getElementById('compartir');
 //const reiniciar= document.getElementById('reiniciar');
