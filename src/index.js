@@ -1,14 +1,32 @@
-//para que se cambie de pagina por medio de Boton
-//primer boton de Empezar
-//const botonEmpezar= documet.getElementById('empezar');
-//botonEmpeza.addEventListener("onclick", botonA);
-//function boton(){
-  //welcome.classList.add ("hideElement");
-  //condiciones.classList.remove("hideElement");
-//}
-const empezar = document.getElementById("empezar");
-empezar.onclick= function (){
+//crear todas las variblesb
 
-// Capturar el título de "Mensaje Cifrado"
-const titulo = document.getElementById("titulo");
-titulo.classList.remove("hideTitle");
+const box= document.getElementById('box');
+const corredor= document.getElementById('recorredor');
+//let string = '';
+//let offset = 0;
+const code= document.getElementById('code').value;
+const encode= document.getElementById('encode');
+
+//const compartir= document.getElementById('compartir');
+//const reiniciar= document.getElementById('reiniciar');
+
+
+document.getElementById('code').addEventListener('click', encriptar);
+function encriptar() {
+    let offset = parseInt(corredor.value);
+   let string= box.value;
+
+ document.getElementById("result").innerHTML=window.cipher.encode(offset,string);
+//console.log(offset+string);
+
+}
+//decode
+document.getElementById('decode').addEventListener('click', descifrar);
+function descifrar() {
+    let offset = parseInt(corredor.value);
+   let string= box.value;
+
+ document.getElementById("result").innerHTML=window.cipher.decode(offset,string);
+}
+
+//activa mi boton de limpiar

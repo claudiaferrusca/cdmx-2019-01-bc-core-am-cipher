@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <body style= "background-image:url('https://i.pinimg.com/originals/5c/ef/36/5cef36801fdac1d0def7df5afdc220c6.jpg')">
+<head>
+<meta charset="utf-8">
+<title>Caesar Cipher</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<body style= "background-image:url('https://i.pinimg.com/originals/5c/ef/36/5cef36801fdac1d0def7df5afdc220c6.jpg')">
 
 
 
-}
+
 <!--mi primer pantalla-->
-  <section>  <div id="pantalla1"class= "hide">
-      <center> <h1> Titulo de mi web </h1> </center>
-      <br> </br>
-      <!---especificar el codigo cesar--->
-    <center>  <p> Aquí podrás cifrar y descifrar mensajes que mandes o te manden por WhatsApp, para hacer más privadas tus conversaciones. </p> </center>
+<section>  <div id="pantalla1"class= "hide">
+<center> <big> <h1> Titulo de mi web </h1> </big> </center>
+<br> </br>
+<!---especificar el codigo cesar--->
+<center> <big> <h2>  Aquí podrás cifrar y descifrar mensajes que mandes o te manden por WhatsApp, para hacer más privadas tus conversaciones. </h2> </big> </center> <br> </br>
 <!---INSTRUCCIONES ---->
 <h1> Instrucciones </h1>
 <ol>
-  <!--- primero ara cifrar --->
+<!--- primero ara cifrar --->
 <strong>  <hi> Cifrar </hi> </strong> <br> </br>
-  <li> Ingre el número de espacios que quieres recorrer las letras en tu mensaje a cifrar y darle enviar </li>
-  <li> En seguida ingresa el mensaje, sin ñ o ... </li>
-  <li> Dale enviar, y en la pantalla de abajo te mostrara tu mensaje cifrado </li> <br> </br>
+<li> Ingre el número de espacios que quieres recorrer las letras en tu mensaje a cifrar y darle enviar </li>
+<li> En seguida ingresa el mensaje, sin ñ o ... </li>
+<li> Dale enviar, y en la pantalla de abajo te mostrara tu mensaje cifrado </li> <br> </br>
 
-  <!--- para decifrar ---->
-  <strong> <hi> Para descifrar </hi> </strong> <br>
+<!--- para decifrar ---->
+<strong> <hi> Para descifrar </hi> </strong> <br>
 </br>
-  <li> Ingresa el mensaje de texto que quieras descifrar y dale enviar </hi>
-    <li> Dale enviar, y tu resultado se verá en la pantalla de abajo </hi>
-      <li> Al final podrás compartir tu mensaje por WhatsApp o reiniciar para poder ingresar más codigos </li>
-    </ol>
-    <button id="empezar">Empezar</button>
+<li> Ingresa el mensaje de texto que quieras descifrar y dale enviar </hi>
+<li> Dale enviar, y tu resultado se verá en la pantalla de abajo </hi>
+<li> Al final podrás compartir tu mensaje por WhatsApp o reiniciar para poder ingresar más codigos </li>
+</ol>
+<br>
+</br>
+
 
 </div>
 </section>
@@ -41,47 +43,46 @@
 <!-- pantalla2" -->
 <section>
 <div id= "pantalla2" class=hide()>
-  <center> <strong> <h1 id="titulo" class="hideTitle"> Mensaje a Cifrar </h1> </center> </stronge>
-    <!-- pantalla de texto-->
-    <!--boton de corredor de espacios -->
-    <!--boton de enviar-->
+<center> <strong> <h1 id="titulo" class="hideTitle"> Mensaje a Cifrar </h1> </center> </stronge>
 
+<!-- pantalla de texto-->
+<!--boton de corredor de espacios -->
+<!--boton de enviar-->
 <div id="mensajeCifrador" class=hide()>
-  <form name="cifrado" action="" method="crifar" target="resultado">
-      <P>Escriba el mensaje a cifrar:<BR>
-      <TEXTAREA rows="10" cols="30" name="mensaje"></TEXTAREA><BR>
+<form name="cifrado" action="" method="crifar" target="resultado">
+<center> <P>Escriba el mensaje:  <BR> </center>
+<center>  <textarea id= "box" value="text" placeholder="Escribe el mensaje a cifrar" rows="10" cols="30" name="mensaje"></textarea> </center>
 <!--boton de contador-->
-        <INPUT type="number" id="recorredor" min="1" max="100">
-          <!--Boton de enviar-->
-          <button id="submit">Enviar </button>
+<center>  <input type="number" id="recorredor" min="0" max="33"> </center>
 
-<!-- cuadro 2 de descifrar-->
-<div id="mensajeDescifrador" class=hide()>
-  <form name="descifrado" action="" method="descrifar" target="resultado">
-      <P>Escriba el mensaje a descifrar:<BR>
-      <TEXTAREA rows="10" cols="30" name="mensaje"></TEXTAREA><BR>
+<!--Boton de enviar-->
+<center>  <button id="code"> Cifrar </button></center>
 
-        <!--boton de contador-->
-                <INPUT type="number" id="recorredorb" min="1" max="100">
-                  <!--Boton de enviar-->
-                  <button id="submitb">Enviar </button>
+
+
+<center>  <button id="decode"> Descifrar </button> </center> <br> </br>
+<center> <hi> Resultado </hi> </center>
+
+<!--boton de contador-->
+<center> <p id="result"> </p>
+
 <!--boton de compartir-->
 <br>
-<button id ="compartir"> Compartir </button>
+<center> <button id ="compartir"> Compartir </button> </center>
 <!--boton de reiniciar-->
-<button id = "reiniciar"> Reiniciar </button> </br>
-      </P>
+<center> <button id = "reiniciar"> Reiniciar </button> </br> </center>
+</P>
 
-    </FORM>
-    <HR>
-
+</FORM>
+<HR>
+</div>
 
 </section>
 
 
 
 
-  <!--<form action="/action_page.php"
+<!--<form action="/action_page.php"
     Escoge el número de espacios (Del 1 al 100):
     <input type="number" id="recorredor" min="1" max="100">
     <button id="enviar" onclick="numeros" ()> ¡Enviar!
@@ -89,8 +90,8 @@
   </form>-->
 
 
-    </div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
+  </div>
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
   </body>
-</html>
+  </html>
