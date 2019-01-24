@@ -1,5 +1,7 @@
 html{
-  background: "white"
+  background-image: <"https://i.pinimg.com/564x/1b/ba/1b/1bba1bc104a9cb6fa94d14005ed5f8e6.jpg">
+  padding: 100%;
+  
 }
 h1 {
   padding: 30px;
@@ -13,7 +15,7 @@ h1 {
 }
 
 h2{
-  color: #CB4335  ;
+  color: #2c2c2b  ;
   font-family: 'Aleo', serif;
 }
  h3{
@@ -28,12 +30,12 @@ hi{
   font-size: 20px
 }
 textarea {
-  border: 5px inset #17202A  ;
+  border: 5px inset #2c2c2b  ;
  margin: 2em 4em 3em 2em;
   width: 400px;
 }
 input{
-  border: 5px inset #17202A  ;
+  border: 5px inset #2c2c2b;  ;
  margin: 2em 4em 3em 2em;
  width: 50px;
 

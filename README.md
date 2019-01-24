@@ -16,7 +16,7 @@ Solicitantes de encriptación de datos.
 Datos Generales Genero: Ambos sexos Rango de Edad: cualquier edad  Rango de Ingresos: nivel económico, bajo-medio medio-alto Localización geográfica: Ciudad de México.
 
 # PROPUESTA
-Una aplicación web en donde el usuario y el cliente (servidor público) puedan acceder directamente al cifrador y logren sencillamente encriptar y descencriptar los datos.
+Una aplicación web en donde el usuario pueda resguardar sus datos, y que el cliente (servidor público) pueda acceder directamente al cifrador y ambos logren sencillamente encriptar y descencriptar los datos.
 # DISEÑO
 Se busca que sea una página clara y precisa, ordenada, con pocas instrucciones, que directamente accedas a la caja de encriptación y desencriptación, lo cual la hace intuitiva para el usuario y manejable para el cliente. El diseño es sencillo y se resaltan los botones, con el fin de que el usuario y el cliente, puedan localizarlos rápidamente, al final solo se  imprimirá en  tus documentos.
 
@@ -31,5 +31,33 @@ Resultado: Datos encriptados
 Desde tu tramite de pasaporte en la _Secretaria de Relaciones Exteriores_.
 
 
+#### Interfaz de usuario (UI)
 
- 
+La interfaz debe permitir al usuario:
+- Elegir un desplazamiento (_offset_) indicando cuántas posiciones queremos que el cifrado desplace cada caracter.
+- Insertar un mensaje (texto) que queremos cifrar.
+- Ver el resultado del mensaje cifrado.
+- Insertar un mensaje (texto) a descifrar.
+- Ver el resultado del mensaje descifrado.
+
+
+#### Scripts / Archivos
+
+* `README.md`: debe explicar cómo descargar, instalar y ejecutar la aplicación
+  así como una introducción a la aplicación, su funcionalidad y decisiones de
+  diseño que tomaron.
+* `src/index.html`: este es el punto de entrada a tu aplicación. Este archivo
+  debe contener tu _markup_ (HTML) e incluir el CSS y JavaScript necesario.
+* `src/cipher.js`: acá debes implementar el objeto cipher, el cual debe estar
+  _exportado_ en el objeto global (`window`). Este objeto (`cipher`) debe
+  contener dos métodos:
+  - `cipher.encode(offset, string)`: `offset` es el número de posiciones que
+    queremos mover a la derecha en el alfabeto y `string` el mensaje (texto)
+    que queremos cifrar.
+  - `cipher.decode(offset, string)`: `offset` es el número de posiciones que
+    queremos mover a la izquierda en el alfabeto y `string` el mensaje
+    (texto) que queremos descifrar.
+* `src/index.js`: acá debes escuchar eventos del DOM, invocar `cipher.encode()`
+  o `cipher.decode()` según sea necesario y actualizar el resultado en la UI.
+* `test/cipher.spec.js`: este archivo contiene algunos tests de ejemplo y acá
+  tendrás que implementar los tests(pruebas ) para `cipher.encode()` y `cipher.decode()`.
