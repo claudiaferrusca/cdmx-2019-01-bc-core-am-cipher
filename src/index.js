@@ -4,6 +4,7 @@
 //cifrado
 const box= document.getElementById('box');
 const corredor= document.getElementById('recorredor');
+//const resultado= document.getElementById('final');
 //let string = '';
 //let offset = 0;
 //const code= document.getElementById('code').value;
@@ -18,7 +19,7 @@ function encriptar() {
     let offset = parseInt(corredor.value);
    let string= box.value;
 
- document.getElementById("result").innerHTML=window.cipher.encode(offset,string);
+ document.getElementById("final").innerHTML=window.cipher.encode(offset,string);
 //console.log(offset+string);
 
 }
@@ -28,7 +29,7 @@ function descifrar() {
     let offset = parseInt(corredor.value);
    let string= box.value;
 
- document.getElementById("result").innerHTML=window.cipher.decode(offset,string);
+ document.getElementById("final").innerHTML=window.cipher.decode(offset,string);
 }
 
 //activa mi boton de limpiar

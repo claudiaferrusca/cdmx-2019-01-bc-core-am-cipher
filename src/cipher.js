@@ -21,10 +21,10 @@ if (ascii >= 65 && ascii <= 90){
 }
 else if (ascii >= 97 && ascii <= 122) {
   let minusculas= (ascii - 97 + espacios)%26 +97;
-  console.log(ascii, minusculas)
+
   let resultado = String.fromCharCode(minusculas);
   final= final+resultado;
-console.log(String.fromCharCode(minusculas));
+
 }
 else {
   let resultado= String.fromCharCode(ascii);
@@ -36,7 +36,7 @@ else {
     //}
     //let resultado= offset+string;
   }
-console.log (final);
+
 return final;
 
 },
@@ -64,17 +64,36 @@ return final;
 
  //},
  decode: (offset,string) => {
-   let resultado= "";
-   let mayus= string.toUpperCase();
-   for (let i = 0; i<mayus.length; i++) {
-     let ascii = mayus.charCodeAt(i);
-     //CODIFICAR
-     let formula = (ascii+65-offset)%26+65;
-     let palabra = String.fromCharCode(formula);
+   let espacios= parseInt(offset);
+
+   let final= "";
+  // let mayus= string.toUpperCase();
+   for (let i = 0; i<string.length; i++) {
+     let ascii = string.charCodeAt(i);
+//CODIFICAR
+if( ascii >= 65 && ascii <=90){
+
+  let formula = (ascii+65-espacios)%26+65;
+  let palabra = String.fromCharCode(formula);
+final= final+palabra;
+}
       //concatenar
-resultado= resultado+palabra;
+   //descifrar minúscula
+   else if (ascii >= 97 && ascii <= 122) {
+     let minusculas= (ascii - 122 - espacios)%26 +122;
+
+     let palabra = String.fromCharCode(minusculas);
+    final = final+palabra;
+
+   }
+   else {
+     let palabra= String.fromCharCode(ascii);
+     final= final+ palabra;
+
    }
    //let resultado= offset+string
-return resultado;
+
+}
+return final;
 }
 }
