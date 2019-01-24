@@ -1,5 +1,7 @@
 //crear todas las variblesb
 
+
+//cifrado
 const box= document.getElementById('box');
 const corredor= document.getElementById('recorredor');
 //let string = '';

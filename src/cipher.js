@@ -1,21 +1,45 @@
 window.cipher = {
   // ...
   encode: (offset,string) => {
-    let resultado="";
+let espacios= parseInt(offset);
+    let final = "";
 
-    let mayus= string.toUpperCase();
-    for (let i = 0; i<mayus.length; i++) {
-      let ascii = mayus.charCodeAt(i);
+    //let mayus= string.toUpperCase();
+    for (let i = 0; i<string.length; i++) {
+      let ascii = string [i].charCodeAt();
       //CODIFICAR
-      let formula = (ascii-65+offset)%26+65;
-      let palabra = String.fromCharCode(formula);
+    //  let formula = (ascii-65+offset)%26+65;
+      //let palabra = String.fromCharCode(formula);
+
+if (ascii >= 65 && ascii <= 90){
+
+  let formula = (ascii -65 + espacios)%26+65;
+  let resultado = String.fromCharCode(formula);
+  final= final + resultado;
+
+}
+else if (ascii >= 97 && ascii <= 122) {
+  let minusculas= (ascii - 97 + espacios)%26 +97;
+  console.log(ascii, minusculas)
+  let resultado = String.fromCharCode(minusculas);
+  final= final+resultado;
+console.log(String.fromCharCode(minusculas));
+}
+else {
+  let resultado= String.fromCharCode(ascii);
+  final= final+ resultado;
+
+}
        //concatenar
-resultado= resultado+palabra;
+
     //}
     //let resultado= offset+string;
   }
-return resultado;
+console.log (final);
+return final;
+
 },
+
 // encode: (offset,string) =>{
   // return offset+string
    //mensaje a cifrar

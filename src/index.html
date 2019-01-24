@@ -4,36 +4,23 @@
 <meta charset="utf-8">
 <title>Caesar Cipher</title>
 <link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 </head>
 
-<body style= "background-image:url('https://i.pinimg.com/originals/5c/ef/36/5cef36801fdac1d0def7df5afdc220c6.jpg')">
+<body style= <link href="https://fonts.googleapis.com/css?family=Aleo" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+SC" rel="stylesheet">
 
 
 
 
 <!--mi primer pantalla-->
 <section>  <div id="pantalla1" class= "hide">
-<center> <big> <h1> Titulo de mi web </h1> </big> </center>
+<center> <big> <h1> Cifrador oficial de la <br> SRE </h1> </big> </center>
+<figure> <img src="https://i.pinimg.com/originals/c6/c9/a5/c6c9a561308582c460382c860803ed9c.jpg">
+</figure>
 <br>
 <!---especificar el codigo cesar--->
-<center> <big> <h2>  Aquí podrás cifrar y descifrar mensajes que mandes o te manden por WhatsApp, para hacer más privadas tus conversaciones. </h2> </big> </center> <br>
-<!---INSTRUCCIONES ---->
-<h1> Instrucciones </h1>
-<ol>
-<!--- primero ara cifrar --->
-<strong>  <hi> Cifrar </hi> </strong> <br>
-<li> Ingre el número de espacios que quieres recorrer las letras en tu mensaje a cifrar y darle enviar </li>
-<li> En seguida ingresa el mensaje, sin ñ o ... </li>
-<li> Dale enviar, y en la pantalla de abajo te mostrara tu mensaje cifrado </li> <br>
-
-<!--- para decifrar ---->
-<strong> <hi> Para descifrar </hi> </strong> <br>
-
-<li> Ingresa el mensaje de texto que quieras descifrar y dale enviar </li>
-<li> Dale enviar, y tu resultado se verá en la pantalla de abajo </li>
-<li> Al final podrás compartir tu mensaje por WhatsApp o reiniciar para poder ingresar más codigos </li>
-</ol>
-<br>
+<center> <big> <h2>   Encriptacion de datos personales, para una mayor seguridad de la ciudadania: </h2> </big> </center> <br>
 
 
 </div>
@@ -41,21 +28,21 @@
 
 <!-- pantalla2" -->
 <section>
-<div id= "pantalla2" class="hide"> </div>
-<center> <strong> <h1 id="titulo" class="hideTitle"> Mensaje a Cifrar </h1> </strong> </center>
+<!--<div id= "pantalla2" class="hide"> </div>-->
+<center> <strong> <h3 id="titulo" class="hideTitle"> Documentacion a Cifrar </h3> </strong> </center>
 
 <!-- pantalla de texto-->
 <!--boton de corredor de espacios -->
 <!--boton de enviar-->
 <div id="mensajeCifrador" class="hide"> </div>
 <form name="cifrado" action="" method="crifar" target="resultado"> </form>
-<center> <p>Escriba el mensaje:  </p> <br> </center>
-<center>  <textarea id= "box" value="text" placeholder="Escribe el mensaje a cifrar" rows="10" cols="30" name="mensaje"></textarea> </center>
+<center> <p>Escriba sus datos:  </p> <br> </center>
+<center>  <textarea id= "box" value="text" placeholder="Escriba su código OCR" rows="10" cols="30" name="mensaje"></textarea> </center>
 <!--boton de contador-->
-<center>  <input type="number" id="recorredor" min="1" > </center>
+<center> <p> Escoga un número... <b> Es importante </b> que solo usted conozca este número.   <input type="number" id="recorredor" min="1" > </center>
 
 <!--Boton de enviar-->
-<center>  <button id="code"> Cifrar </button></center>
+<center>  <button id="code"> Cifrar </button></center> <br>
 
 
 

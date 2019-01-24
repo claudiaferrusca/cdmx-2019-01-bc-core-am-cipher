@@ -1,9 +1,55 @@
 html{
-  background: "https://i.pinimg.com/originals/5c/ef/36/5cef36801fdac1d0def7df5afdc220c6.jpg"
+  background: "white"
 }
-hide{
-  display:none;
+h1 {
+  padding: 30px;
+        color: white;
+       text-aling: center ;
+      font-family: 'Cormorant SC', serif;
+     font-size: 70px;
+     border: 1px solid black;
+      margin: 5px 5px 5px 5px;
+      background-color: #C0392B;
 }
-.hideTitle{
-  display:none;
+
+h2{
+  color: #CB4335  ;
+  font-family: 'Aleo', serif;
+}
+ h3{
+   color: black;
+   font-size: 26px;
+ }
+
+p{
+  font-size: 20px
+}
+hi{
+  font-size: 20px
+}
+textarea {
+  border: 5px inset #17202A  ;
+ margin: 2em 4em 3em 2em;
+  width: 400px;
+}
+input{
+  border: 5px inset #17202A  ;
+ margin: 2em 4em 3em 2em;
+ width: 50px;
+
+}
+
+img {
+  margin-left: 45%;
+  width: 10%;
+}
+button {
+  background-color: #C0392B ;
+  border: inset black;
+  color: black;
+  padding: 10px 25px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
