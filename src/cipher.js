@@ -11,6 +11,7 @@ let espacios= parseInt(offset);
     //  let formula = (ascii-65+offset)%26+65;
       //let palabra = String.fromCharCode(formula);
 
+//para minusculas encriptar
 if (ascii >= 65 && ascii <= 90){
 
   let formula = (ascii -65 + espacios)%26+65;
